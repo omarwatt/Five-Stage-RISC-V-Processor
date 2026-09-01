@@ -17,7 +17,7 @@ A VHDL processor project comparing single-cycle and five-stage pipelined impleme
 
 The pipelined variant distributes the datapath across five stages. A hazard unit controls stalls, forwarding supplies recent operands, and flushing discards instructions after a control-flow redirect. Multiplication is split across EX and MEM using partial products from the lower 16 operand bits.
 
-![Pipelined processor RTL](docs/images/pipeline-rtl.png)
+![Pipelined processor RTL](https://github.com/omarwatt/Five-Stage-RISC-V-Processor/blob/main/DOC/images/pipeline-rtl.png?raw=true)
 *The report’s RTL view shows the processor blocks and interstage register banks.*
 
 ## Tools and Technologies
@@ -38,16 +38,16 @@ Archived results from `DOC/pre5.pdf`:
 
 The pipelined design raises reported maximum clock frequency while increasing resources. These figures do not establish application execution-time speedup.
 
-![Pipeline simulation](docs/images/pipeline-waveform.png)
+![Pipeline simulation](https://github.com/omarwatt/Five-Stage-RISC-V-Processor/blob/main/DOC/images/pipeline-waveform.png?raw=true)
 *The IF, ID, EX, MEM, and WB program counters expose pipeline progression; STCNT and FHCNT show accumulated stalls and flushes.*
 
-![Pipeline timing result](docs/images/pipeline-timing.png)
+![Pipeline timing result](https://github.com/omarwatt/Five-Stage-RISC-V-Processor/blob/main/DOC/images/pipeline-timing.png?raw=true)
 *Quartus reports an MCLK Fmax of 98.72 MHz for the archived implementation.*
 
-![Register-file critical path](docs/images/register-file-critical-path.png)
+![Register-file critical path](https://github.com/omarwatt/Five-Stage-RISC-V-Processor/blob/main/DOC/images/register-file-critical-path.png?raw=true)
 *The technology-map view traces memwb_regwrite_q through the IDECODE decoder to RF_q, locating the reported register-file write timing path.*
 
-![Pipelined data-memory readback](docs/images/dtcm-results.png)
+![Pipelined data-memory readback](https://github.com/omarwatt/Five-Stage-RISC-V-Processor/blob/main/DOC/images/dtcm-results.png?raw=true)
 *The archived DTCM readback shows the benchmark’s stored result pattern. The report compares it with the single-cycle result and software reference.*
 
 ## Repository Structure
