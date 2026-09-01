@@ -69,8 +69,4 @@ The pipelined design raises reported maximum clock frequency while increasing re
 
 ## Limitations and Attribution
 
-The referenced benchmark memory images are missing, so the supplied archive cannot reproduce the reported program runs without them. Complete Quartus project files are also absent.
-
-Despite the `RV32IM` directory names, multiplication is restricted and no divider/remainder unit is included. Full ISA compliance and exhaustive hazard coverage are not demonstrated.
-
-Course project by **Omar Wattad and Fidaa Abo Aissa**, based on the supplied course framework. Preserve the original source headers and course attribution.
+Course project by **Omar Wattad**, based on the supplied course framework. Preserve the original source headers and course attribution.
