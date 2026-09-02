@@ -67,6 +67,6 @@ The pipelined design raises reported maximum clock frequency while increasing re
 4. Supply matching instruction/data initialization images and replace the absolute paths in the memory sources.
 5. Compile the selected variant's packages and DUT files in dependency order, then its testbench. Elaborate and inspect stage signals, register writes, and memory results.
 
-## Limitations and Attribution
+## Attribution
 
 Course project by **Omar Wattad**, based on the supplied course framework. Preserve the original source headers and course attribution.
